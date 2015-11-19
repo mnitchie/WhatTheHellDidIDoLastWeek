@@ -1,23 +1,22 @@
----
 language: node_js
 node_js:
-  - "0.12"
-
+- '0.12'
 sudo: false
-
 cache:
   directories:
-    - node_modules
-
+  - node_modules
 before_install:
-  - export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
-  - "npm config set spin false"
-  - "npm install -g npm@^2"
-
+- export PATH=/usr/local/phantomjs-2.0.0/bin:$PATH
+- npm config set spin false
+- npm install -g npm@^2
 install:
-  - npm install -g bower
-  - npm install
-  - bower install
-
+- npm install -g bower
+- npm install
+- bower install
 script:
-  - npm test
+- npm test
+deploy:
+  provider: heroku
+  app: whispering-temple-1544
+  api_key:
+    secure: f8uu/9Pbbj6GJnIwEhYzLb1NVKco9k+ZFCscYajU6rfTK9JEdxRk+pIUSejG9qsXxi9RcVQfDWJRkP3saoqOAA2GV33QEQiH3tqn6iAAAyrabX5kNmpwAoXTNUV1jlvKI3jcJwtx9QHN4NRAGrFt/JlwT9Twb2J+0LAEV9R+HLXn5fgTzEXALVOzqSKG/qAI9KwcneWbvcOUNDjQpoem5dj1YJ/69UJF3iewO1pYUfTTPKvZI31RVcly6VIsrGGXb1lb9zltJrDGu6zxu91CA+slCzdVJ3ZbWsHWQqblCHm7aUOpbJoB6Q2S0kuldQUgaKjTgHqoLYKkGfhTdcYi1m7JpJMgs/8fthdDg8PPLqqpDqpBLq1P6cwIq0rKP33NMZyoehna/E2i/Cajy7VOv2VQoObz67TOFGZY2v1UAptBm9AJmMpCo5WtH5hrR8EkMCdOxdrkb90bszFTvf/uYWX0tVEbOTBwjUeZW5HLRu65Lv7oK2vRadB4auxdQ9gSJ2hJ9V5aCFb2udHlLe1fE5LoAy5+bm3xbpVjVju3IRL8x1etOGT8DMNAIcsvX88Ipa93s1ywGLCFos/VeRQUnb4KdbZpR2rsq8B2J/tNsgK17pefod68wJFnV6oYJ1GFNzFJsXrMfqRplT6TZOXzRdS/QdmvRdhOuJEIqRzduNw=
