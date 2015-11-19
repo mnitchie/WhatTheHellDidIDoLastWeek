@@ -10,7 +10,7 @@ export default Ember.Route.extend({
 				debugger;
 			});*/
 			
-			this.get('torii').open('github-oauth2').then((authorization) => {
+			/*this.get('torii').open('github-oauth2').then((authorization) => {
 				console.log(authorization);
 				Ember.$.ajax({
 					type: 'POST',
