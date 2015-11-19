@@ -1,4 +1,4 @@
-#What The Hell Did I Do Last Week?
+#What The Hell Did I Do Last Week? 
 
 [![Build Status](https://travis-ci.org/mnitchie/WhatTheHellDidIDoLastWeek.svg)](https://travis-ci.org/mnitchie/WhatTheHellDidIDoLastWeek)
 
