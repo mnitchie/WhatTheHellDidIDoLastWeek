@@ -1,0 +1,22 @@
+{
+  "name": "what-the-hell-did-i-do-last-week",
+  "version": "1.0.0",
+  "description": "Info aggregator from several developer tools",
+  "main": "app.js",
+  "scripts": {
+    //"test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mnitchie/WhatTheHellDidIDoLastWeek.git"
+  },
+  "author": "Mike Nitchie",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/mnitchie/WhatTheHellDidIDoLastWeek/issues"
+  },
+  "homepage": "https://github.com/mnitchie/WhatTheHellDidIDoLastWeek#readme",
+  "dependencies": {
+    "express": "^4.13.3"
+  }
+}

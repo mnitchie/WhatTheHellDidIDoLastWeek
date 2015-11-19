@@ -3,9 +3,10 @@
 # compiled output
 ember/dist
 ember/tmp
+/public
 
 # dependencies
-*/node_modules
+node_modules/
 */bower_components
 
 # misc
