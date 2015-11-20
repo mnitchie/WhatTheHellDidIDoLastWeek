@@ -13,7 +13,3 @@ export default Ember.Route.extend({
 		}
 	}
 });
-
-/*
-https://api.github.com/user/repos?access_token=43c25f86a780079100741bad256145903eef6f19
-*/
