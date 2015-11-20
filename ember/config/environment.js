@@ -23,7 +23,8 @@ module.exports = function(environment) {
       sessionServiceName: 'session',
       providers: {
         'github-oauth2': {
-          apiKey: apiKeys.github.clientId
+          apiKey: apiKeys.github.clientId,
+          scope: 'user,repo:status,notifications'
         }
       }
     }
