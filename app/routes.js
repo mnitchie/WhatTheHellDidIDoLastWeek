@@ -28,7 +28,7 @@ module.exports = function(app) {
 
 			tokenResponse.on('end', function() {
 				var returned = JSON.parse(data);
-				res.send(returned.access_token);
+				res.send({token: returned.access_token});
 			});
 		});
 		tokenRequest.write(tokenRequestData);
