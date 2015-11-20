@@ -1,0 +1,7 @@
+// Copy this file and rename it to apiKeys.default
+// add your api keys
+
+module.exports = {
+	github.clientId: '',
+	github.clientSecret: ''
+}
