@@ -8,6 +8,7 @@ export default Ember.Route.extend({
 				console.log(this.get('session.githubToken'));
 				console.log(this.get('session.githubToken'));
 				console.log(this.get('session').get('githubToken'));
+				this.transitionTo('github.activity');
 			});
 		}
 	}
