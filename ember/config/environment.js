@@ -20,6 +20,7 @@ module.exports = function(environment) {
     },
 
     torii: {
+      sessionServiceName: 'session',
       providers: {
         'github-oauth2': {
           apiKey: apiKeys.github.clientId
