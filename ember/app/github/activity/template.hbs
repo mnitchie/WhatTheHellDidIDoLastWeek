@@ -1,1 +1,11 @@
 {{session.githubToken}}
+<div>
+	<h1>Some stuff is going to go here...</h1>
+
+	{{#each model as |repo|}}
+		<h3>{{repo.name}}</h3>
+		{{#each repo.commits as |commit|}}
+			<p>{{commit.message}}</p>
+		{{/each}}
+	{{/each}}
+</div>
