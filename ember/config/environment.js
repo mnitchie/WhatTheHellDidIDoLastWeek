@@ -1,4 +1,5 @@
 /* jshint node: true */
+var apiKeys = require('../../apiKeys');
 
 module.exports = function(environment) {
   var ENV = {
@@ -21,7 +22,7 @@ module.exports = function(environment) {
     torii: {
       providers: {
         'github-oauth2': {
-          apiKey: '123'
+          apiKey: apiKeys.github.clientId
         }
       }
     }
